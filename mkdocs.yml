@@ -28,7 +28,6 @@ theme:
         name: Switch to system preference
   
   features:
-    - navigation.instant
     - navigation.tabs
     - navigation.sections
 
