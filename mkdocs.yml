@@ -2,3 +2,41 @@ site_name: GOB Workshop
 site_url: https://colboi.github.io/gob
 theme:
   name: material
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: deep purple
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {}
+extra_css:
+  - stylesheets/extra.css
