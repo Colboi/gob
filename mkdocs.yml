@@ -1,0 +1,4 @@
+site_name: GOB Workshop
+site_url: https://colboi.github.io/gob
+theme:
+  name: material
